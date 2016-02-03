@@ -1,0 +1,5 @@
+# Netscape HTTP Cookie File
+# http://curl.haxx.se/rfc/cookie_spec.html
+# This is a generated file!  Do not edit.
+
+.suning.com	TRUE	/	FALSE	1485829134	_device_session_id	p_93ae97c7-5dc6-4490-95c9-1f79c5bc9f21
