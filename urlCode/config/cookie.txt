@@ -1,0 +1,11 @@
+# Netscape HTTP Cookie File
+# http://curl.haxx.se/rfc/cookie_spec.html
+# This is a generated file!  Do not edit.
+
+.suning.com	TRUE	/	FALSE	1485400939	_device_session_id	p_b686cdf8-145f-46a5-91f1-b3ecbd6ba097
+.suning.com	TRUE	/	FALSE	1455592948	custno	5202515165
+.suning.com	TRUE	/	FALSE	1455592948	idsLoginUserIdLastTime	251055836%40qq.com
+.suning.com	TRUE	/	FALSE		logonStatus	2
+.suning.com	TRUE	/	FALSE		nick	%E7%99%BD%E5%A4%A9%E4%B8%8D%E6%87%82%E5%A4%9C%E7%99%BD...
+.suning.com	TRUE	/	FALSE	1453872748	nick2	%E7%99%BD%E5%A4%A9%E4%B8%8D%E6%87%82%E5%A4%9C%E7%99%BD...
+passport.suning.com	FALSE	/ids/	TRUE		TGC	TGT196BBDF3BC1EB026862BB0383CDF1C7F3957FDF5

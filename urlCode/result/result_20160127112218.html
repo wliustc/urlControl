@@ -1,0 +1,77 @@
+
+        <html>
+         <head>
+          <meta charset="utf-8" />
+          <title>状态码</title>
+         </head>
+         <body>
+          <table align="center" width="80%" border="1">
+           <tbody>
+            <tr>
+             <td colspan="3" align="center">
+              <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+              <div id="codeImg" style="height:300px;width:400px;"></div> </td>
+            </tr>
+            <tr>
+             <td colspan="3" align="center">
+              <table width="100%" border="1" cellspacing="0" cellpadding="0" class="sp-order-table">
+               <thead>
+                <tr bgcolor="#CECEFF">
+                 <td>标题</td>
+                 <td>URL</td>
+                 <td>状态码</td>
+                 <td>结果</td>
+                </tr>
+               </thead>
+        <tbody><tr><td>url1</td><td>状态码:404;错误原因:Not Found</td><td>状态码:404</td><td style='color:#FF0000'>错误原因:Not Found</td></tr><tr><td>url2</td><td>状态码:200</td><td>状态码:200</td><td style='color:#00FF7F'>通过</td></tr><tr><td>url3</td><td>状态码:404;错误原因:Not Found</td><td>状态码:404</td><td style='color:#FF0000'>错误原因:Not Found</td></tr></tbody>
+              </table>
+              </td>
+            </tr>
+           </tbody>
+          </table>
+          <!-- ECharts单文件引入 -->
+          <script src="../config/echarts.common.min.js"></script>
+          <style>
+            body{ text-align:center}
+            .sp-order-table {
+                clear: both;
+                border: 1px solid #ebebeb;
+                margin-top: 20px;
+            }
+          </style>
+          <script type="text/javascript">
+            // 基于准备好的dom，初始化echarts图表
+            var myChart = echarts.init(document.getElementById('codeImg'));
+            var option = {
+            //标题
+            title : {
+                text: '状态码',
+                //subtext: '纯属虚构',
+                x:'center'
+            },
+        
+            //左侧竖直列
+            legend: {
+                orient : 'vertical',
+                x : 'left',
+                data:['404','200']
+            },
+            //饼图值
+            series : [
+                {
+                    name:'状态码',
+                    type:'pie',
+                    radius : '55%',
+                    center: ['50%', '60%'],
+                    data:[{value:2, name:'404'},{value:1, name:'200'}
+                    ]
+                }
+            ]
+        };
+        
+            // 为echarts对象加载数据
+            myChart.setOption(option);
+          </script>
+         </body>
+        </html>
+        
