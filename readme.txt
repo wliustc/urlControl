@@ -1,1 +1,5 @@
-你吃奶你才是内地偶发静安寺大姐夫来喀什公交卡拉斯的积分离开
+处理url
+
+urlTdk：获取url返回响应中的title、keyword，description，等，存放在excel中
+
+urlCode：获取url访问的状态码，比如200,404等
